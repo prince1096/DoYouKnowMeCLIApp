@@ -14,14 +14,14 @@ var score = 0;
 
 var questions = [{
   question: "Do You know my birthday?",
-  answer : "10 dec"
-},{
+  answer: "10 dec"
+}, {
   question: "Where do I live? ",
   answer: "kolkata"
 }, {
   question: "What is my higher Qualification? ",
   answer: "MTECH"
-},{
+}, {
   question: "What about my passion?",
   answer: "Coding"
 }, {
@@ -45,7 +45,7 @@ function welcome() {
 function play(question, answer) {
   var userAnswer = readlineSync.question(question);
 
-  if (userAnswer.toUpperCase() === answer.toUpperCase()) { 
+  if (userAnswer.toUpperCase() === answer.toUpperCase()) {
     console.log("right!");
 
     score = score + 1;
@@ -75,13 +75,11 @@ function game() {
 
 
 
-function levelReached () {
+function levelReached() {
   if (score < 2) {
     console.log("level Average" + "Try again");
-  } else if (2 =< score < 5) {
-    console.log("level Good");
   } else {
-    console.log("level Best");
+    console.log("level Good");
   }
 }
 
