@@ -13,30 +13,61 @@ var readlineSync = require("readline-sync");
 var score = 0;
 
 var questions = [{
-  question: "Do You know my birthday?",
-  answer: "10 dec"
+  question: "Do You know my birthday?  \na.10 oct \nb.10 dec \nc.12 oct \nd.12 dec \nEnter your answer :",
+  answer: "b"
 }, {
-  question: "Where do I live? ",
-  answer: "kolkata"
+  question: "Where do I live?   \na.Delhi \nb.Pune \nc.Patna \nd.Kolkata \nEnter your answer : ",
+  answer: "d"
 }, {
-  question: "What is my higher Qualification? ",
-  answer: "MTECH"
+  question: "What is my higher Qualification?  \na.MBBS \nb.BTECH \nc.MTECH \nd.PHD \nEnter your answer : ",
+  answer: "c"
 }, {
-  question: "What about my passion?",
-  answer: "Coding"
+  question: "What about my passion?  \na.Writing \nb.Coding \nc.Gymming \nd.Sports \nEnter your answer :",
+  answer: "b"
 }, {
-  question: "What about my hobby? ",
-  answer: "Astrology"
+  question: "What about my hobby?  \na.Playing Badminton \nb.Gymming \nc.Astrology \nd.Watching movie \nEnter your answer : ",
+  answer: "c"
 }, {
-  question: "What do I want to became? ",
-  answer: "web developer"
+  question: "What do I want to became? \na.Teacher \nb.Youtuber \nc.BusinessMan \nd.WevDeloper \nEnter your answer : ",
+  answer: "d"
 }, {
-  question: "What is my height?",
-  answer: "5feet 11inch"
+  question: "Who is my favourite cricketer? \na.MSDhoni \nb.Virat Kohit \nc.Rohit Sharma \nd.Hardik Pandya \nEnter your answer :",
+  answer: "d"
 }, {
-  question: "What is my favorite sport? ",
-  answer: "Cricket"
+  question: "What is my favorite sport? \na.Football \nb.Cricket \nc.Badminton \nd.Volleyballa \nEnter your answer : ",
+  answer: "b"
 }];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function welcome() {
   var userName = readlineSync.question("What's your name? ");
